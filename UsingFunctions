@@ -1,0 +1,14 @@
+import java.util.*;
+public class Solution {
+    public static int solve(int A) {
+        double area = Math.PI*A*A;
+        return (int)Math.ceil(area);
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int radius = sc.nextInt();
+        
+        int area = solve(radius);
+        System.out.println(area);
+    }
+}
